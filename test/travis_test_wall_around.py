@@ -20,7 +20,7 @@ class WallAroundTest(unittest.TestCase):
 
     def test_io(self):
         left, right = self.set_and_get(400,100,100,0)
-        self.assertTrue(left == 0 and right == 0,"cannot stop")
+        self.assertTrue(left == right == 0,"cannot stop")
 
         left, right = self.set_and_get(100,0,0,100)
         self.assertTrue(left == right != 0,"wall_front")
